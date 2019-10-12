@@ -1,0 +1,45 @@
+.header {
+  height: 7rem;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.5s;
+}
+
+.logo {
+  margin-left: 3rem;
+}
+.navbar {
+  flex: 0 0 80%;
+  margin-right: 3rem;
+
+  &__list {
+    display: inline;
+    list-style: none;
+  }
+
+  &__item {
+    float: left;
+    margin: 1rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-gray-light-1;
+    }
+  }
+}
+
+.black {
+  background-color: black;
+}
